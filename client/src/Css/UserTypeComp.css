@@ -1,0 +1,30 @@
+.userTypeBlock{
+    height: 200px;
+    background-color: white;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    background-color:salmon;
+    z-index: 10;
+    border-radius: 5px;
+    transform: translateY(-200px);
+    transition: .5s;
+}
+.userTypeBlock:hover .img-container{
+    transform: translateY(0px);
+}
+
+.userType{
+    width: inherit;
+    position: absolute;
+    bottom: 5px;
+}

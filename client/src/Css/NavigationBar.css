@@ -1,0 +1,14 @@
+.nav-items{
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.navbar-nav{
+    margin-left: auto;
+    letter-spacing: 2px;
+}
+
+.navBar{
+    position: fixed;
+    bottom: 5px;
+}

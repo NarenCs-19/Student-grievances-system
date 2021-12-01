@@ -24,7 +24,12 @@
 }
 
 .userType{
-    width: inherit;
     position: absolute;
     bottom: 5px;
+}
+
+@media screen and (max-width: 576px){
+    .userTypeBlock{
+        height: 170px;
+    }
 }

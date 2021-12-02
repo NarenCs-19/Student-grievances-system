@@ -2,10 +2,19 @@
     display: flex;
     justify-content: flex-end;
 }
-  
+
+.navbar-brand img{
+    filter: invert();
+}
+
+.nav-items li:hover{
+    letter-spacing: 2px;
+}
+
 .navbar-nav{
     margin-left: auto;
     letter-spacing: 2px;
+    font-family: Outfit;
 }
 
 .navBar{

@@ -8,11 +8,13 @@ import FooterComp from './FooterComp';
 function HomePage() {
     return (
         <div className="homeContainer">
-            <div className="col-10 homeMainGrid">
-                <div className="navigation-bar">
+            <div className="col-12 homeMainGrid">
+                <div className="navigation-bar w-100">
                     <NavigationBar/>
                 </div>
+                <div className="webLogoComp h-100">
                 <WebLogoComp/>
+                </div>
             </div>
             <div className="row userTypeComponent p-4">
                 <UserTypeComp type="ACOE"/>

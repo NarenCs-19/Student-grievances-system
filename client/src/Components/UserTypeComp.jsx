@@ -8,7 +8,7 @@ function UserTypeComp(props) {
           <div className="w-100 img-container">
             
           </div>
-          <div className="w-100 userType text-center">
+          <div className="w-100 h-100 userType text-center d-flex align-items-center justify-content-center">
             <span>{props.type}</span>
           </div>
       </Link>

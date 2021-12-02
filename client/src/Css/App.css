@@ -21,9 +21,7 @@ body::-webkit-scrollbar{
   justify-self: center;
 }
 
-.navigation-bar{
-  position: absolute;
-}
+
 .userTypeComponent{
   width: 100%;
   display: flex;

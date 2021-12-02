@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import {Route, BrowserRouter, Routes} from 'react-router-dom';
 import HomePage from './Components/HomePage';

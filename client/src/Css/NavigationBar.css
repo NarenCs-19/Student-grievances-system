@@ -7,8 +7,11 @@
     filter: invert();
 }
 
+.nav-items li{
+    transition: .5s;
+}
 .nav-items li:hover{
-    letter-spacing: 2px;
+    letter-spacing: 6px;
 }
 
 .navbar-nav{

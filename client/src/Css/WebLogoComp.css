@@ -19,8 +19,9 @@
     border-radius: 50px;
     padding: 5px 20px;
     letter-spacing: 2px;
+    transition: .5s;
 }
 
-.webLogoTypography{
-    
+.webLogoContainer button:hover{
+    letter-spacing: 6px;
 }

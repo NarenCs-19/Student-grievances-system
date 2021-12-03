@@ -3,14 +3,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #121212;
 }
 
 .form-container{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.left-container,.right-container{
+    background-color: #121212;
     width: 400px;
     padding-top: 30px;
     padding-bottom: 80px;
+}
+
+.left-container{
     background-color: white;
-    border-radius: 10px;
 }
 
 .title img{
@@ -27,7 +36,7 @@
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    border-bottom: 2px solid cadetblue;
+    border-bottom: 2px solid orangered;
 }
 
 
@@ -39,10 +48,11 @@
     position: relative;
     left: 3px;
     bottom: 3px;
-    color: cadetblue;
+    color: orangered;
 }
 
 input{
+    background: none;
     border:none;
     border-radius: 0px 20px 0 0;
     padding: 7px;
@@ -57,6 +67,7 @@ input::placeholder{
 
 
 input:focus{
+    color: white;
     outline: 0;
 }
 
@@ -72,7 +83,6 @@ input:focus{
     transform: translateY(-50%);
     font-size: 15px;
     letter-spacing: 1px;
-    color: #999;
     transform: .3s;
 }
 
@@ -93,17 +103,17 @@ input:focus{
 .submit-btn button{
     border: none;
     border-radius: 20px;
-    background-color: cadetblue;
+    background-color: orangered;
     padding: 8px 25px;
     transition: .2s ease-in;
     text-transform: uppercase;
     font-size: 15px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .submit-btn button:hover{
     opacity: .8;
-    letter-spacing: 2px;
+    letter-spacing: 6px;
 }
 /********************************/
 
@@ -140,3 +150,8 @@ input:focus{
 
 
 /***********social-login stylings**********/
+@media screen and (max-width: 992px)  {
+    .left-container{
+        display: none;
+    }
+}

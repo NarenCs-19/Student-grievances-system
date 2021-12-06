@@ -39,7 +39,7 @@ function Login() {
 
   return (
     <div className="main-container">
-      <div className="form-container text-center m-auto">
+      <div className=" form-container text-center m-auto">
         <div className="left-container">
 
         </div>

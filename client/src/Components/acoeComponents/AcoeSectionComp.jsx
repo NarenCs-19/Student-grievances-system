@@ -1,32 +1,61 @@
-import React from 'react'
+import React from "react";
+import DashboardIcon from "@mui/icons-material/Dashboard";
+import PendingActionsIcon from "@mui/icons-material/PendingActions";
+import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
+import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
 
 function AcoeSectionComp(props) {
-    return (
-        <nav className="navbar navbar-expand-lg navbar-light py-4">
-            <button className="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            {/* <a className="navbar-brand" href="#">
-            <img src={CegLogo} alt="CegLogo"></img>
-            </a> */}
-            <div className="collapse navbar-collapse nav-items " id="navbarTogglerDemo03">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase fw-bold row">
-                    <li className="nav-item col-12">
-                        <a className="nav-link active text-white" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li className="nav-item col-12">
-                        <a className="nav-link text-white" href="#">About us</a>
-                    </li>
-                    <li className="nav-item col-12">
-                        <a className="nav-link text-white" href="#">FAQ</a>
-                    </li>
-                    <li className="nav-item col-12">
-                        <a className="nav-link text-white" href="#">Contact us</a>
-                    </li>
-                </ul>
-            </div> 
-        </nav>
-    )
+  return (
+    <div className="sidenav row d-flex m-0 p-0">
+      <div className="navItems col-12 p-0">
+        <div className="nav-items-icons row col-12">
+          <ul className="navbar-nav text-uppercase fw-bold row">
+            <li className="nav-item col-12 d-flex align-items-center py-4">
+              <DashboardIcon />
+            </li>
+            <li className="nav-item col-12  d-flex align-items-center py-4">
+              <PendingActionsIcon />
+            </li>
+            <li className="nav-item col-12  d-flex align-items-center py-4">
+              <QuestionMarkIcon />
+            </li>
+            <li className="nav-item col-12  d-flex align-items-center py-4">
+              <PowerSettingsNewIcon />
+            </li>
+          </ul>
+        </div>
+        <div className="nav-items-names">
+          <ul className="text-uppercase fw-bold row">
+            <li className="nav-item col-12 d-flex align-items-center py-4">
+              <a
+                className="nav-link active text-white"
+                aria-current="page"
+                href="/acoe/Dashboard"
+              >
+                Dashboard 
+              </a>
+            </li>
+            <li className="nav-item col-12  d-flex align-items-center py-4">
+              <a className="nav-link text-white" href="/acoe/PendingApprovals">
+                Pending approvals
+              </a>
+            </li>
+            <li className="nav-item col-12  d-flex align-items-center py-4">
+              <a className="nav-link text-white" href="/acoe/FAQ">
+                FAQ
+              </a>
+            </li>
+            <li className="nav-item col-12  d-flex align-items-center py-4">
+              <a className="nav-link text-white" href="/acoe/Logout">
+                Logout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  );
 }
 
-export default AcoeSectionComp
+export default AcoeSectionComp;

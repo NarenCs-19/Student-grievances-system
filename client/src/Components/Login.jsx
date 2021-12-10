@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import avatar from "../Images/avatar.svg";
 import "../Css/Login.css";
 import {
-  EnvelopeFill,
   LockFill,
-  Google,
-  Linkedin,
-  Facebook,
   EyeSlashFill,
   EyeFill,
   PersonFill,

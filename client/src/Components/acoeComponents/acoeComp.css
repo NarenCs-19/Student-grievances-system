@@ -1,3 +1,29 @@
 .container-fluid{
     background-color: #121212;
 }
+
+.sidenav{
+    height: 100vh;
+    background-color: white;
+}
+
+.mainComp{
+    overflow-y: scroll;
+}
+
+.mainComp::-webkit-scrollbar{
+    width: 0;
+}
+
+.navItems{
+    display: flex;
+}
+
+.nav-items-icons{
+    padding: 0;
+}
+
+.nav-items-names{
+    width: 250px;
+    background-color: black;
+}

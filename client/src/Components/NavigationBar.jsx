@@ -1,5 +1,5 @@
 import React from 'react';
-import CegLogo from '../Images/CegLogo.png';
+//import CegLogo from '../Images/CegLogo.png';
 import '../Css/NavigationBar.css';
 
 function NavigationBar() {
@@ -16,16 +16,16 @@ function NavigationBar() {
         <div className="collapse navbar-collapse nav-items " id="navbarTogglerDemo03">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase fw-bold">
             <li className="nav-item">
-              <a className="nav-link active text-white" aria-current="page" href="#">Home</a>
+              <a className="nav-link active text-white" aria-current="page" href="/home">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">About us</a>
+              <a className="nav-link text-white" href="/aboutUs">About us</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">FAQ</a>
+              <a className="nav-link text-white" href="/FAQ">FAQ</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">Contact us</a>
+              <a className="nav-link text-white" href="/contactUs">Contact us</a>
             </li>
           </ul>
         </div>

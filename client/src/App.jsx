@@ -3,8 +3,8 @@ import {Route, BrowserRouter,Routes} from 'react-router-dom';
 import HomePage from './Components/HomePage';
 import Login from './Components/Login';
 import './Css/App.css'
-import AcoeDashboard from './Components/acoeComponents/AcoeDashboard';
-import AcoePendingApprovals from './Components/acoeComponents/AcoePendingApprovals';
+import AcoeComp from './Components/acoeComponents/AcoeComp';
+
 
 const App = ()=> {
   return (  
@@ -13,8 +13,8 @@ const App = ()=> {
         <Routes>
           <Route path="/" element={<HomePage/>} exact></Route>
           <Route path="/login" element={<Login/>} exact></Route>
-          <Route path="/acoe/Dashboard" element={<AcoeDashboard/>} exact></Route>
-          <Route path="/acoe/PendingApprovals" element={<AcoePendingApprovals/>} exact></Route>
+          <Route path="/acoe" element={<AcoeComp/>} exact>
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>

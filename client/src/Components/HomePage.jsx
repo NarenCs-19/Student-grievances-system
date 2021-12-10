@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import UserTypeComp from './UserTypeComp';
 import NavigationBar from './NavigationBar';
 import WebLogoComp from './WebLogoComp';

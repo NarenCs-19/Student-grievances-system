@@ -1,13 +1,17 @@
-.container-fluid{
-    background-color: #121212;
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+*{
+    box-sizing: border-box;
 }
 
-.sidenav{
-    height: 100vh;
-    background-color: white;
+.container-fluid{
+    font-family: Outfit;
 }
 
 .mainComp{
+    width: calc(100% - 225px);
+    padding: 0;
+    margin: 0;
     overflow-y: scroll;
 }
 
@@ -15,8 +19,107 @@
     width: 0;
 }
 
+/* profile container */
+.profile-container{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.profile-container .profile-pic{
+    width: 80px;
+}
+
+.profile-container img{
+    width: 60px;
+}
+ .profile-details{
+     width: calc(100% - 80px);
+     padding-left: 10px;
+     transition: .5s;
+ }
+
+ .profile-pic{
+     transition: .5s;
+ }
+
+ .profile-details .profile-name{
+     font-size: 20px;
+ }
+/* profile container */
+
+/* side nav bar */
+.side-nav{
+    width: 225px;
+    transition: .5s;
+    overflow-x: hidden;
+}
+.sidenav{
+    position: relative;
+    height: 100vh;
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+}
+
+#close{
+    width: 80px;
+}
+
+#close .menu-icon{
+    left: 50%;
+}
+
+#close .profile-details,#close .profile-pic{
+    display: none;
+}
+
 .navItems{
     display: flex;
+    height: 300px;
+}
+
+.navItems ul{
+    width: 225px;
+    margin: 0;
+    padding: 0;
+}
+
+.navItem-icon{
+    width: 80px;
+    text-align: center;
+}
+
+
+.navItem-icon:hover svg{
+    font-size: 30px;
+}
+
+.nav-link-text{
+    text-align:start;
+    width: calc(100%-80px);
+}
+
+.nav-item{
+    transition: .5s;
+}
+.nav-item:hover{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.nav-link-text a{
+    padding-left: 0;
+    color: black;
+}
+
+.navItems li{
+    padding: 0;
+}
+
+.navItems li a:hover{
+    color: black;
 }
 
 .nav-items-icons{
@@ -27,3 +130,12 @@
     width: 250px;
     background-color: black;
 }
+
+.menu-icon{
+    position: absolute;
+    left: 90%;
+    top: 20px;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+/* side nav bar */
